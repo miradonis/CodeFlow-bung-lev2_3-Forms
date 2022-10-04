@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>CodeFlow Übung lev2_3: Forms</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Register form</legend>
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type=”text” placeholder=Name /></td>
+                </tr>
+                <tr>
+                    <td>Surname</td>
+                    <td><input type=”text” placeholder=Surname /></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type=”mail” placeholder=Email /></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <span>Male</span><input type="radio" name="Male">
+                        <span>Female</span><input type="radio" name="Female">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Picture</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td><select>
+                            <option>Germany</option>
+                            <option>Spain</option>
+                            <option>France</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Preferred languages</td>
+                    <td><select multiple="multiple">
+                            <option>HTML</option>
+                            <option>CSS</option>
+                            <option>JS</option>
+                            <option>React</option>
+                            <option>Angular</option>
+                        </select>
+                        <p>
+                            (To choose more than one use cmd key
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Field of activity</td>
+                    <td><input type="checkbox"><span class="activity">IT</span>
+                        <input type="checkbox"><span class="activity">Design</span>
+                        <input type="checkbox"><span class="activity">Other</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                </tr>
+            </table>
+            <button type="submit">Send</button>
+            <button type="submit">Cancel</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
